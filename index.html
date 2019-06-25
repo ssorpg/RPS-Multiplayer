@@ -16,10 +16,70 @@
 </head>
 
 <body>
-    <div id="#wrapper"></div>
+    <div id="wrapper">
+        <header id="header" class="row justify-content-center">
+            <p>What's your username?</p>
+            <input id="nameInput" type="text">
+            <button id="selectName">Select Name</button>
+        </header>
 
-    <!--Game Javascript-->
-    <script type="text/javascript" src="Assets/Javascript/game.js"></script>
+        <section id="statistics" class="row justify-content-between">
+            <article id="playerStats" class="col-2">
+                <p>
+                    <h1 id="playerName">&nbsp;</h1>
+                </p>
+                <p>
+                    <h5 id="playerWinsLosses">&nbsp;</h5>
+                </p>
+            </article>
+
+            <article class="col-2"></article> <!--Hack 1 of 2 spacing reasons-->
+
+            <article id="opponentStats" class="col-2">
+                <p>
+                    <h1 id="opponentName">&nbsp;</h1>
+                </p>
+                <p>
+                    <h5 id="opponentWinsLosses">&nbsp;</h5>
+                </p>
+            </article>
+        </section>
+
+        <section class="row justify-content-between">
+            <article id="playerArea" class="col-2 selectionArea">
+                <p>
+                    <h5>Your weapon:</h5>
+                </p>
+                <p id="weaponSelection">
+                    <button id="rock" class="weaponButton">Rock</button>
+                    <button id="paper" class="weaponButton">Paper</button>
+                    <button id="scissors" class="weaponButton">Scissors</button>
+                </p>
+                <p>
+                    <h1 id="yourWeapon"></h1>
+                </p>
+            </article>
+
+            <article class="col-2">
+                <p>
+                    <h4>Result:</h4>
+                </p>
+                <p>
+                    <h1 id="result"></h1>
+                </p>
+            </article>
+
+            <article id="opponentArea" class="col-2 selectionArea">
+                <p>
+                    <h5>Opponent's weapon:</h5>
+                </p>
+                <p id="opponentSpacingFix">&nbsp;</p> <!--Hack 2 of 2 spacing reasons-->
+                <p>
+                    <h1 id="opponentWeapon"></h1>
+                </p>
+            </article>
+        </section>
+    </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
@@ -27,20 +87,8 @@
     <!-- Specific Firebase products we want -->
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-database.js"></script>
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyCte7lhLlrSr3m3turhqLQQy3_3YSBymWE",
-            authDomain: "trilogy-r-p-s.firebaseapp.com",
-            databaseURL: "https://trilogy-r-p-s.firebaseio.com",
-            projectId: "trilogy-r-p-s",
-            storageBucket: "trilogy-r-p-s.appspot.com",
-            messagingSenderId: "545722149214",
-            appId: "1:545722149214:web:633cee7329b7a2af"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+    <!--App Javascript-->
+    <script type="text/javascript" src="Assets/Javascript/app.js"></script>
 </body>
 
 </html>
