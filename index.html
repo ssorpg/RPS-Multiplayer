@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+    <div id="#wrapper"></div>
+
+    <!--Game Javascript-->
+    <script type="text/javascript" src="Assets/Javascript/game.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+
+    <!-- Specific Firebase products we want -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCte7lhLlrSr3m3turhqLQQy3_3YSBymWE",
+            authDomain: "trilogy-r-p-s.firebaseapp.com",
+            databaseURL: "https://trilogy-r-p-s.firebaseio.com",
+            projectId: "trilogy-r-p-s",
+            storageBucket: "trilogy-r-p-s.appspot.com",
+            messagingSenderId: "545722149214",
+            appId: "1:545722149214:web:633cee7329b7a2af"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>
